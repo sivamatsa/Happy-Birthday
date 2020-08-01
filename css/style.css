@@ -1,1 +1,70 @@
 /* Add all your styles here */
+body {
+    background-image:url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1000&q=80');
+    font-family: 'Berkshire Swash', cursive;
+    text-align:center;
+}
+
+    h5{
+    text-align:center;
+    color:yellow;
+    animation:hfdanimate 0s infinite;
+    font-size:10px;
+    }
+
+.hfd{
+    font-size:200%;
+    z-index:1;
+    animation:hfdanimate 1s infinite;
+    color:rgba(0,0,0,0);
+}
+
+.friend{
+    font-size:40px;
+    z-index:2;
+    animation:friendanimate 5s infinite;
+    color:#fff;
+    padding-top:40px;
+}
+
+.time{
+    font-size:20px;
+    z-index:-1;
+    animation:timeanimate 1s infinite;
+}
+img{
+    border-radius:100%;
+    border:none;
+    width:120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+@keyframes hfdanimate{
+    0%{
+        text-shadow:0px -20px #000, 0px 20px #fff;
+    }
+    50%{
+        text-shadow:0px 20px #fff,0px -20px #000;
+    }
+    100%{
+        text-shadow:0px -20px #000, 0px 20px #fff;
+    }
+}
+
+@keyframes friendanimate{
+    0%,100%{
+        margin-left:-30%;
+        text-shadow:10px -5px #f72bed, 20px -10px #432bf7, 30px -15px #2bd2f7, 40px -20px #2bf73c, 50px -25px #f1f72b, 60px -30px #f77a2b;
+        color:#000;
+    }
+    25%,75%{
+        color:#fff;
+    }
+    50%{
+        margin-left:30%;
+        text-shadow:-10px -5px #f72bed, -20px -10px #432bf7, -30px -15px #2bd2f7, -40px -20px #2bf73c, -50px -25px #f1f72b, -60px -30px #f77a2b;
+        color:#000;
+    }
+}
