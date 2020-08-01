@@ -1,31 +1,51 @@
 <!doctype html>
 <html>
- <head> 
-  <meta charset="UTF-8"> 
-  <title>Happy Birthday</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <meta name="author" content="Siva Matsa"> 
-  <meta name="description" content="with HTML,JS,CSS"> 
-  <meta name="keywords" content="programming hero, web playground"> 
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
-  <!--@bootstrapCss--> 
-  <link rel="stylesheet" href="css/bootstrap.min.css"> 
-  <!--custom css--> 
-  <link rel="stylesheet" href="css/style.css"> 
- </head>  
- <body>
-  <br> 
-  <br> 
-  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&amp;display=swap" rel="stylesheet">   
-  <h1 class="hfd"> Happy friendship Day </h1> 
-  <br> 
-  <br> 
-  <h1 id="name" class="friend"> </h1> 
-  <br> 
-  <h1 id="greet" class="time"></h1> 
-  <br> 
-  <br> 
-  <script>
+<head
+    <metacharset="UTF-8">
+    <title>Happy Friendship day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Siva Matsa">
+    <meta name="description" content="with HTML,JS,CSS">
+    <meta name="keywords" content="programming hero, web playground">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <!--@bootstrapCss-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</br> 
+</br>
+<br>  </br>
+
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <h1 class='hfd'>
+            Happy friendship Day
+        </h1>
+        <br>
+        <audio src="https://mobcup.net/d/iwm5g9fn/mp3"  ,"  loop="loop" id="music">
+  </audio>
+        <br>
+        <img src="https://code.sololearn.com/Icons/Avatars//19257472.jpg">
+        
+        
+        <h1 id='name' class='friend'>
+        </h1>
+        <h5>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+        
+        </h5>
+    <h5>You are thinking why I wrote alphabets of English???</h5>
+    <h5>I wrote English alpahbets because I can't mention all my friends name in this so i wrote alphabets as every name of a person starts with a alphabet</h5>
+    <h5>I am very happy because you are one of them .  </h5>
+        
+        
+        <br>
+        <h1 id="greet" class='time'></h1>
+        <br>
+        <br>
+        <script>
         let name;
         do{
             name = "Sai Laxmi"
@@ -42,13 +62,32 @@
         
         document.getElementById("greet").innerHTML = days + " days<br>" + hours + " hours<br> " + minutes + " minutes<br> " + seconds + " seconds\n ";
         }, 1000);
-        </script>   
-  <style>
+        
+         var music = document.getElementById("music")
+  music.load();
+  document.addEventListener("click", function() {
+  music.play()
+  })
+        
+        </script>
+      <footer> <marquee > From  𝕾𝖎𝖛𝖆 𝕸𝖆𝖙𝖘𝖆 </marquee></footer>
+        
+    </body>
+</html>
+
+<style>
     body {
     background-image:url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1000&q=80');
     font-family: 'Berkshire Swash', cursive;
     text-align:center;
 }
+
+    h5{
+    text-align:center;
+    color:yellow;
+    animation:hfdanimate 0s infinite;
+    font-size:10px;
+    }
 
 .hfd{
     font-size:200%;
@@ -58,17 +97,26 @@
 }
 
 .friend{
-    font-size:60px;
+    font-size:40px;
     z-index:2;
     animation:friendanimate 5s infinite;
     color:#fff;
+    padding-top:40px;
 }
 
 .time{
-    font-size:30px;
+    font-size:20px;
     z-index:-1;
     animation:timeanimate 1s infinite;
 }
+img{
+    border-radius:100%;
+    border:none;
+    width:120px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 
 @keyframes hfdanimate{
     0%{
@@ -98,23 +146,8 @@
     }
 }
 
-@keyframes timeanimate{
-    0%{
-        font-size:30px;
-    }
-    50%{
-        font-size:35px;
-    }
-    100%{
-        font-size:30px;
-    }
-}
+
    
    
 
 </style>
-  <footer> 
-   <p class="programminghero">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p> 
-  </footer>
- </body>
-</html>
